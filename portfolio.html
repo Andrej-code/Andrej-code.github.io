@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		/*Stylish Portfolio*/
+
+		#stylish_portfolio {
+			font-family: 'Source Sans Pro', sans-serif;
+			background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-masthead.jpg);
+			background-color: initial;
+			background-position: center;
+			position: relative;
+			background-size: cover;
+			padding: 17%;
+			text-align: center;
+			height: 778px 0;
+		}
+
+		#stylish_portfolio h1 {
+			font-size: 5.5rem;
+			text-align: center;
+			margin-bottom: 0.25rem;
+			color: #212529;
+		}
+
+		#stylish_portfolio h3 {
+			margin-bottom: 30px;
+			color: #212529;
+			font-style: italic;
+			font-size: 27.778px;
+		}
+
+		#stylish_portfolio button {
+			background-color: #1D809F;
+			color: white;
+			border-radius: 4px;
+			height: 66px;
+			width: 176.25px;
+			font-size: 16px;
+			border-color: #1D809F;
+		}
+
+
+		#stylish_portfolio .text1 {
+			text-align: center;
+			color: white;
+		}
+
+		/*Next Project*/
+		#next_project {
+			font-family: 'Source Sans Pro', sans-serif;
+
+		}
+
+		#next_project h2 {
+
+			font-size: 22.55px;
+			text-align: center;
+			padding-bottom: 10px;
+			padding-top: 80px;
+		}
+
+		#next_project p {
+			font-weight: 300;
+			text-align: center;
+			padding-bottom: 30px;
+			font-size: 20px;
+		}
+
+		#next_project a {
+			color: #1D809F;
+		}
+
+		#next_project button {
+			background-color: #212529;
+			color: white;
+			font-size: 16px;
+			border-radius: 4px;
+			width: 176.625px;
+			height: 66px;
+			text-align: center;
+			margin: 0px 150px;
+			border-color: #212529;
+			margin-bottom: 80px;
+		}
+
+		#container {
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+
+		/*What We Offer*/
+		#what_offer {
+			font-family: 'Source Sans Pro', sans-serif;
+			background-color: #1D809F;
+			color: white;
+			text-align: center;
+			height: 100%;
+			padding-bottom: 40px;
+
+		}
+
+
+		#what_offer h3 {
+			text-transform: uppercase;
+			color: #ECB808;
+			font-size: 1rem;
+			text-align: center;
+			padding-top: 90px;
+		}
+
+		#what_offer h2 {
+			text-align: center;
+			font-size: 3rem;
+			padding-top: 5px;
+		}
+
+
+		#what_offer #icon i {
+			font-size: 2.25rem;
+			background-color: #fff;
+			border-radius: 50%;
+			color: #1D809F;
+			height: 7rem;
+			width: 7rem;
+			/*						padding: 30px;*/
+			line-height: 7.5rem;
+			display: block;
+			margin-bottom: 1rem;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		#icon i {
+			margin: 15px;
+		}
+
+		#what_offer p {
+			padding-top: 6px;
+			font-size: 13px;
+			padding-bottom: 20px;
+			color: #FFFFFFB3;
+			text-align: center;
+		}
+
+		#heart i {
+			font-size: 13px;
+			background-color: #1D809f;
+			color: #FFFFFFB3;
+			height: 0px;
+			width: 0px;
+			padding-right: 17px;
+			padding-left: 6px;
+			text-align: center;
+			text-size-adjust: 50%;
+		}
+
+		heart {}
+
+		#we {
+			width: 100px;
+			position: relative;
+			top: 35px;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		#offer {
+			position: relative;
+			margin-left: auto;
+
+		}
+
+		@media screen and (min-width: 992px) {
+			#offer {
+				float: left;
+				margin-bottom: 0;
+				width: 25%;
+
+			}
+
+			#we {
+				margin: 0 340px 24px;
+				overflow: auto;
+				width: 65%;
+			}
+		}
+
+		/*Welcome to your next website!*/
+		#next_website {
+			font-family: 'Source Sans Pro', sans-serif;
+			background-image: url(https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/bg-callout.jpg);
+			/*			background-color: initial;*/
+			background-position: center;
+			background-size: cover;
+			padding: 15rem 0;
+			text-align: center;
+			height: 728px 0;
+		}
+
+		#next_website button {
+			background-color: #1D809F;
+			color: white;
+			border-radius: 4px;
+			height: 50px;
+			width: 140px;
+			font-size: 0.7rem;
+			border-color: #1D809F;
+			text-align: center;
+		}
+
+		#website h2 {
+			padding: -0px;
+			font-size: 45px;
+			padding-bottom: 48px;
+		}
+
+		/*        Recent Projects */
+		#recent_projects {
+			font-family: 'Source Sans Pro', sans-serif;
+			padding: 110px 25px;
+		}
+
+		#recent_projects>h3 {
+			text-transform: uppercase;
+			color: #ECB808;
+
+			font-size: 1rem;
+			text-align: center;
+		}
+
+		#recent_projects .subtitle {
+			font-size: 3rem;
+			text-align: center;
+			margin-bottom: 45px;
+		}
+
+		.project {
+			position: relative;
+			width: 496px;
+			margin: auto;
+			margin-bottom: 12px;
+		}
+
+		#recent_projects img {
+			width: 100%;
+			filter: brightness(80%);
+			vertical-align: middle;
+		}
+
+		#recent_projects .text {
+			position: absolute;
+			z-index: 1;
+			bottom: 0px;
+			padding-left: 26px;
+			padding-bottom: 37px;
+			color: white;
+		}
+
+		.text h3 {
+			font-size: 0.8rem;
+			text-transform: uppercase;
+			margin-bottom: 12px;
+		}
+
+		.text .desc {
+			/*            border: solid;*/
+			font-size: 1.2rem;
+			font-weight: 300;
+		}
+
+		@media screen and (min-width: 992px) {
+			.project {
+				float: left;
+				margin-bottom: 0;
+				width: 50%;
+			}
+
+			main {
+				margin: auto;
+				/*				border: solid;*/
+				overflow: auto;
+				width: 867px;
+			}
+		}
+
+		/*		below impossible*/
+		#below_impossible {
+			font-family: 'Source Sans Pro', sans-serif;
+			background-color: #1D809F;
+			color: white;
+			text-align: center;
+			height: 100%;
+			padding: 120px 0px;
+
+		}
+
+		#below_impossible h2 {
+			font-size: 24.2px;
+			margin: 0px 3px 24px;
+		}
+
+		#click {
+			border-color: white;
+			font-size: 15px;
+			font-family: 'Source Sans Pro', sans-serif;
+			height: 55px;
+			width: 110px;
+			border-radius: 5px;
+			/*			margin-left: 70px;*/
+		}
+
+		#look {
+			background-color: #212529;
+			color: white;
+			font-family: 'Source Sans Pro', sans-serif;
+			height: 55px;
+			width: 125px;
+			border-radius: 5px;
+			margin-left: 20px;
+		}
+
+		#me {
+			/*						border: solid red;*/
+			height: 120px;
+			position: relative;
+			margin-left: auto;
+		}
+
+		#me .list {
+			display: inline-block;
+
+		}
+
+		@media screen and (min-width:992px) {
+			#me {
+				
+				margin-bottom: 0;
+				width: 100%;
+			}
+
+			#click {
+			
+				overflow: auto;
+			}
+		}
+
+		/*		map*/
+
+		iframe {
+			width: 100%;
+		}
+
+		/*		bottom*/
+		#bottom {
+			text-align: center;
+			padding-top: 45px;
+			padding-bottom: 45px;
+		}
+
+		#bottom i {
+
+			height: 3rem;
+			width: 3rem;
+			font-size: 1.5rem;
+			background-color: #1D809F;
+			border-radius: 100%;
+			color: white;
+			
+
+			line-height: 50px;
+			
+		}
+
+		/*		copyright*/
+		footer {
+			font-family: 'Source Sans Pro', sans-serif;
+			color: #6C757D;
+			font-size: 14px;
+			text-align: center;
+			padding-bottom: 60px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="stylish_portfolio">
+		<div class="text1">
+			<h1>Stylish Portfolio</h1>
+			<h3>A Free Bootstrap Theme by Start Bootstrap</h3>
+			<button>Find Out More</button>
+		</div>
+	</div>
+	<!--Next project -->
+	<div id="next_project">
+		<h2>Stylish Portfolio is the perfect theme for <br> your next project! </h2>
+		<p>This theme features a flexible, UX frindly sidebar<br> menu and stock photos from our friends at <a href="https://unsplash.com/">Unsplash</a>!</p>
+		<div id="container">
+			<button>What We Offer</button>
+		</div>
+	</div>
+	<!--	What we offer -->
+	<section id="what_offer">
+		<div id="services">
+			<h3>services</h3>
+			<h2>What We Offer</h2>
+		</div>
+		<div id="we">
+			<div id="offer">
+				<div id="icon">
+					<i class="icon-screen-smartphone"></i>
+				</div>
+				<h4>Responsive</h4>
+				<p>Looks great on any screen size!
+			</div>
+			<div id="offer">
+				<div id="icon">
+					<i class="icon-pencil"></i>
+				</div>
+				<h4>Redesigned</h4>
+				<p>Freshly redesigned for Bootstrap 5.</p>
+			</div>
+			<div id="offer">
+				<div id="icon">
+					<i class="icon-like"></i>
+				</div>
+				<h4>Favorited</h4>
+				<p id="heart">Millions of users<i class="fa-solid fa-heart"> </i>StartBootstrap!</p>
+			</div>
+			<div id="offer">
+				<div id="icon">
+					<i class="icon-mustache"></i>
+				</div>
+				<h4>Question</h4>
+				<p>I mustache you a question...</p>
+			</div>
+		</div>
+	</section>
+	<!--	Welcome to your next website!-->
+	<div id="next_website">
+		<div id="website">
+			<h2>Welcome to <em>your</em><br> next website!</h2>
+		</div>
+		<button>Download Now!</button>
+
+	</div>
+	<!--(.project>img+h3+.desc)*4-->
+	<section id="recent_projects">
+		<h3>portfolio</h3>
+		<h1 class="subtitle">Recent Projects</h1>
+		<main>
+			<div class="project">
+				<img src="https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-1.jpg" alt="">
+				<div class="text">
+					<h3>Stationary</h3>
+					<div class="desc">A yellow pencil with envelopes on a clean, blue backdrop!</div>
+				</div>
+			</div>
+			<div class="project">
+				<img src="https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-2.jpg" alt="">
+				<div class="text">
+					<h3>Ice Cream</h3>
+					<div class="desc">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</div>
+				</div>
+			</div>
+			<div class="project">
+				<img src="https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-3.jpg" alt="">
+				<div class="text">
+					<h3>Strawberries</h3>
+					<div class="desc">Strawberries are such a tasty snack, especially with a little sugar on top!</div>
+				</div>
+			</div>
+			<div class="project">
+				<img src="https://startbootstrap.github.io/startbootstrap-stylish-portfolio/assets/img/portfolio-4.jpg" alt="">
+				<div class="text">
+					<h3>Workspace</h3>
+					<div class="desc">A yellow workspace with some scissors, pencils, and other objects.</div>
+				</div>
+			</div>
+		</main>
+	</section>
+	<!--	Below impossible-->
+	<section id="below_impossible">
+		<h2>The buttons below are impossible to resist...</h2>
+		<div id="me">
+			<div class="list"><button id="click">Click Me!</button></div>
+			<div class="list"><button id="look">Look at Me!</button></div>
+		</div>
+	</section>
+	<!--		Map-->
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.577813417924!2d-122.41934238442286!3d37.776496419833016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter%20HQ!5e0!3m2!1sen!2sca!4v1647218929938!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+	<!--	Bottom-->
+	<div id="bottom">
+		<i class="fa-brands fa-facebook-f"></i>
+		<i class="fa-brands fa-twitter"></i>
+		<i class="fa-brands fa-github"></i>
+	</div>
+	<!--Copyright-->
+	<footer>Copyright &copy; Your Website 2021</footer>
+</body></html>
